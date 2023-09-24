@@ -1,0 +1,27 @@
+{
+  "name": "musicplayer",
+  "version": "1.0.0",
+  "description": "music player",
+  "repository": {
+    "url": "https://github.com/Ten666u/musicPlayer.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Ten666u <maks.bardin.46@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
