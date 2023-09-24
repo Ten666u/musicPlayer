@@ -1,15 +1,9 @@
 body {
   height: 100vh;
   background: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 button {
@@ -24,19 +18,10 @@ button {
 
 .offset-container {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .player {
@@ -57,27 +42,17 @@ button {
 }
 
 .player-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .player-play-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
 }
@@ -102,18 +77,10 @@ button {
 }
 
 .player-timeline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 10px;
 }
 
@@ -123,8 +90,6 @@ button {
   background: #a3a3a3;
   border-radius: 25px;
   margin: 0 5px;
-  -webkit-box-flex: 10;
-      -ms-flex: 10;
           flex: 10;
   overflow: hidden;
   cursor: pointer;
@@ -139,10 +104,7 @@ button {
 
 .player-time {
   padding: 2px 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .player-volume-container {
@@ -151,9 +113,9 @@ button {
 
 .player-volume {
   height: 28px;
-  -webkit-appearance: none;
   margin: 10px 0;
   width: 100%;
+  -webkit-appearance: none;
   background: transparent;
 }
 .player-volume::-webkit-slider-runnable-track {
@@ -162,6 +124,7 @@ button {
   cursor: pointer;
   animate: 0.2s;
   background: #0e0e0e;
+  -webkit-appearance: none;
   border-radius: 10px;
 }
 .player-volume::-webkit-slider-thumb {
@@ -277,29 +240,18 @@ ul {
 }
 
 .play_options {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .random_play {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
   border-radius: 8px;
   margin-left: 12px;
   padding: 2px 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .random_play.active {
   background: black;
@@ -309,20 +261,13 @@ ul {
 }
 
 .repeat_play {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 24px;
   cursor: pointer;
   border-radius: 8px;
   padding: 2px 5px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .repeat_play .repeat_icon path {
   stroke: black !important;
@@ -335,34 +280,22 @@ ul {
 }
 
 .next_previous-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .previous_track-btn, .next_track-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .previous_track-btn:hover, .next_track-btn:hover {
   fill: #444444;
 }
 
 .next_track-btn {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #fileInput {
@@ -372,12 +305,8 @@ ul {
 }
 
 .upload_audio {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .uploadIcon {
@@ -385,13 +314,9 @@ ul {
 }
 
 .player_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .playlistst_container {
@@ -405,15 +330,9 @@ ul {
 }
 
 .playlists_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 24px;
   font-weight: 600;
 }
@@ -432,12 +351,8 @@ ul {
 
 .playlist_item {
   padding: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .playlist_item .playlist_name-txt {
   max-width: 120px;
@@ -446,12 +361,8 @@ ul {
   white-space: nowrap;
 }
 .playlist_item .delete_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .playlist_item.playing .delete_button {
   color: white;
@@ -462,38 +373,22 @@ ul {
   border: none;
   padding: 0;
   height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .new_playlist-header {
   font-size: 25px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 18px;
 }
 .new_playlist-header .form_close-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 25px;
 }
@@ -545,12 +440,8 @@ ul {
 }
 
 .new_playlist-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .playlist_footer-btn {
@@ -560,7 +451,6 @@ ul {
   font-weight: 600;
 }
 .playlist_footer-btn:hover {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background: black;
   color: white;
@@ -577,7 +467,6 @@ ul {
 }
 .track_list-item input {
   display: inline-block;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   margin-right: 12px;
 }
