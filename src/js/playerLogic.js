@@ -205,11 +205,13 @@ const renderPlaylist = (namePlaylist) =>{
 // Функция для загрузки и воспроизведения выбранного трека
 const loadAndPlayTrack = (index) => {
     let itemArr = playlist.querySelectorAll(".playlist_list-item")
+    let playlistName = document.querySelector(".playlist_item.playing")
+    let name = playlistName.getAttribute("name")
 
     if(itemArr){
         for(let i = 0; i <= itemArr.length - 1; i++){
             let item = itemArr[i]
-            i == index ? item.classList.add("playing") : item.classList.remove("playing")
+            i == index && name == state.playlistName ? item.classList.add("playing") : item.classList.remove("playing")
         }
     }
 
