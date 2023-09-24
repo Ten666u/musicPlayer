@@ -3,9 +3,6 @@ import { getState, saveState, getPlayListsState, savePlayListsState, getAllTrack
 import { saveBlobToIndexedDB } from "./dbIndex.js";
 import { renderPlaylist, loadAndPlayTrack, renderPlaylistList } from "./playerLogic.js";
 
-import "../assets/styles/bootstrap-reboot.min.css"
-import "../assets/styles/style.css"
-
 const fileInput = document.getElementById('fileInput');
 
 let state = {
