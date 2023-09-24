@@ -27,6 +27,6 @@
 # Реализация:
   - Загруженные мелодии хранятся в IndexedDB в виде BlobUrl
   - Состояние плеера и плейлисты хранятся в LocalStorage
-  - Визуализация Web Audio API
+  - Визуализация Web Audio API (вроде даже нативный)
 
 Реализовано всё: <a href="https://ten666u.github.io/musicPlayer/src/">Посмотреть результат</a>
