@@ -29,4 +29,6 @@
   - Состояние плеера и плейлисты хранятся в LocalStorage
   - Визуализация Web Audio API
 
+### Очистите localStorage, если не работает
+
 Реализовано всё: <a href="https://ten666u.github.io/musicPlayer/src/">Посмотреть результат</a>
